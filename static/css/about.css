@@ -1,0 +1,312 @@
+* {
+    font-family: "Inter";
+    padding: 5px 10px;
+    margin: 0;
+}
+
+body {
+    max-width: 1920px;
+    background: radial-gradient(circle at center, #f9f5f0 0%, #dceeea 100%);
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.left-navbar img {
+    width: 200px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.right-navbar {
+    display:flex;
+    gap: 2rem;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;
+}
+
+.options a {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.options p {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+}
+
+.option-button {
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-content {
+    margin-top: 50px;
+    width: 100%;
+
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+
+    z-index: -1;
+}
+
+.about-section {
+    width: 90%;
+    height: 550px;
+    border-radius: 10px;
+    padding: 20px;
+
+    background-color: #ff9900;
+    opacity: 0.6;
+    color: white;
+}
+
+/* About Us Introduction */
+
+.about-title {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+
+    font-size: 35px;
+}
+
+.about-title hr {
+    width: 35%;
+    height: 3px;
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+
+.about-us {
+    display: flex;
+    text-align: left;
+}
+
+.about-us-text h3{
+    font-size: 24px;
+}
+
+.about-us-img {
+    margin: 0px 100px 0px 30px;
+
+    height: auto;
+    width: 210px;
+}
+
+/* Game Details */
+.another-title {
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+    background-color: #7da35c;
+    color: white;
+}
+
+.about-game {
+    width: 90%;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-item {
+    width: 28%;
+    padding: 10px;
+    justify-items: center;
+    transition: transform 0.3s ease;
+}
+
+.about-item h4 {
+    font-size: 28px;
+}
+
+.about-item img {
+    width: auto;
+    height: 200px;
+}
+
+.about-item hr {
+    width: 70%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+
+    margin: 10px 0;
+}
+
+.about-item p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Closing */
+.closing {
+    width: 90%;
+    height: 600px;
+
+    padding: 0;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.tech {
+    height: 95%;
+    width: 95%;
+    background-color: #f5bc5e;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.tech h1 {
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.image-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-hover {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.quote {
+    position: relative;
+    height: 45%;
+    width: 95%;
+    background-color: #9cd1f0;
+    margin: 20px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.quote p {
+    font-size: 30px;
+    color: white;
+}
+
+.contact-info {
+    position: relative;
+    height: 45%;
+    width: 95%;
+    background-color: #97b76f;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-info {
+    display: flex;
+    align-items: center;
+}
+
+.my-info img {
+    height: auto;
+    width: 70px;
+}
+
+.my-info p {
+    color: white;
+    font-size: 20px;
+}
+
+.contact-info h5 {
+    color: white;
+    font-size: 50px;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    overflow: hidden;
+    align-self: center;
+    position: relative;
+    margin-right: 40px;
+    padding: 0;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+}
+
+/* Hover Effects */
+.about-item:hover {
+  transform: scale(1.1);
+}
+
+.img-hover:hover {
+  transform: scale(1.1);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.nav-link.active {
+  color: black;
+  text-decoration: underline;
+}

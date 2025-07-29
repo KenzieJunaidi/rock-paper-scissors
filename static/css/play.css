@@ -1,0 +1,212 @@
+* {
+    font-family: "Inter";
+    padding: 5px 10px;
+    margin: 0;
+}
+
+body {
+    max-width: 1920px;
+    background: radial-gradient(circle at center, #f9f5f0 0%, #dceeea 100%);
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.left-navbar img {
+    width: 200px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.right-navbar {
+    display:flex;
+    gap: 2rem;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;
+}
+
+.options a {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.options p {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+}
+
+.option-button {
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-content {
+    justify-items: center;
+}
+
+/* Score */
+.score {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Move Boxes */
+.camera-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.move-box {
+    text-align: center;
+    align-content: center;
+
+    padding: 10px;
+    outline: 5px solid #ff9900;
+    border-radius: 10px;
+
+    width: 660px;
+    height: 494px;
+}
+
+.robot {
+    width: 300px;
+    height: auto;
+
+    opacity: 0.5;
+}
+
+.video {
+    padding: 0;
+}
+
+/* Between Boxes */
+
+.divider {
+    width: 180px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 30px;
+}
+
+.timer {
+    font-size: 20px;
+    top: 150px;
+}
+
+/* Let's Play Button */
+.wrapper {
+    justify-items: center;
+}
+
+.detect-button {
+    color: white;
+    background-color: #ff9900;
+
+    height: 70px;
+    width: 300px;
+
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hidden Move Box */
+.ally {
+    position: relative;
+}
+.enemy {
+    position: relative;
+}
+
+.reveal-move-border {
+    width: 520px;
+    height: 360px;
+    border-radius: 10px;
+
+    position: absolute;
+    background-color: none;
+    border: 5px solid #56940bBF;
+
+    top: 50%;
+    left: 50%; /* optional, if you also want horizontal centering */
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+    display: none;
+}
+
+.reveal-move {
+    width: 500px;
+    height: 340px;
+    border-radius: 10px;
+
+    justify-items: center;
+    text-align: center;
+
+    background-color: #56940bBF;
+    z-index: 11;
+}
+
+.reveal-move img {
+    padding: 0;
+    width: auto;
+    height: 280px;
+}
+
+.reveal-move p {
+    padding: 0;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* Hover Effects */
+button:hover {
+  transform: scale(1.1);
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.nav-link.active {
+  color: black;
+  text-decoration: underline;
+}

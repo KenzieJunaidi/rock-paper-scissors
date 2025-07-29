@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/play.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Play Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-navbar">
+            <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="Logo" class="header-logo">
+            <div class="options">
+                <a href="/" class="nav-link">Home</a>
+                <p>·</p>
+                <a href="/about" class="nav-link">About Us</a>
+                <p>·</p>
+                <a href="/play" class="nav-link">Play</a>
+            </div>
+        </div>
+        <div class="right-navbar">
+            <button style="background-color: #56940b; color: white;" class="option-button">Login</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="score">
+            <h1 id="score-text">Win Streak: 0</h1>
+        </div>
+        <div class="camera-space">
+            <div class="ally">
+                <div id="reveal-move-border-1" class="reveal-move-border">
+                    <div class="reveal-move">
+                        <img id="dynamic-image-1" src="" alt="">
+                        <p id="dynamic-text-1"></p>
+                    </div>
+                </div>
+                <div class="move-box">
+                    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+                </div>
+            </div>
+            <div class="divider">
+                <h2>VS</h2>
+                <p id="timer" class="timer">Time: </p>
+            </div>
+            <div class="enemy">
+                <div id="reveal-move-border-2" class="reveal-move-border">
+                    <div class="reveal-move">
+                        <img id="dynamic-image-2" src="" alt="">
+                        <p id="dynamic-text-2"></p>
+                    </div>
+                </div>
+                <div class="move-box">
+                    <img class="robot" src="{{ url_for('static', filename='assets/robot.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <button class="detect-button" id="detect-button">じゃんけんぽん</button>
+        </div>
+    </div>
+    <script type="module" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

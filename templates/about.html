@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>About Us Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-navbar">
+            <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="Logo" class="header-logo">
+            <div class="options">
+                <a href="/" class="nav-link">Home</a>
+                <p>·</p>
+                <a href="/about" class="nav-link">About Us</a>
+                <p>·</p>
+                <a href="/play" class="nav-link">Play</a>
+            </div>
+        </div>
+        <div class="right-navbar">
+            <button style="background-color: #56940b; color: white;" class="option-button">Login</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="about-section">
+            <div class="about-title">
+                <hr>
+                <h1>About Us</h1>
+                <hr>
+            </div>
+            <div class="about-us">
+                <div class="about-us-text">
+                    <h3>Welcome to ジャンケン pon!</h3>
+                    <p>
+                        We're just a bunch of curious minds (okay, maybe just one with too much caffeine) who had a simple question:
+                        “Why press buttons when your hands can do the talking?” <br>
+                        <br>
+                        So we built something different — a classic game, powered by modern tech.
+                        This isn’t your average Rock-Paper-Scissors match.
+                        This is you vs. the machine, in a fast-paced battle of reflexes and recognition. <br>
+                        <br>
+                        Using your webcam and a touch of AI magic, our game detects your hand gestures in real time — Rock, Paper, or Scissors — and instantly responds with the bot’s choice. No clicks. No delays. Just lift your hand, throw your move, and let the showdown begin. <br>
+                        <br>
+                        It’s fun. It’s weirdly addictive. And trust us, it’s harder to beat a computer that never hesitates. <br>
+                        <br>
+                        Behind the scenes, we’re blending computer vision and machine learning into a seamless game experience that feels natural, responsive, and just a little bit futuristic. Whether you're testing your reaction speed, settling an argument, or just trying to outwit a camera-powered opponent, we hope this brings a smile (and maybe a win streak) to your day. <br>
+                        <br>
+                        So go ahead — pick your move. <br>
+                        But fair warning: the bot doesn’t blink... and it learns fast.
+                    </p>
+                </div>
+                <img class="about-us-img" src="{{ url_for('static', filename='assets/about-us.png') }}" alt="Photo">
+            </div>
+        </div>
+        <div class="another-title">
+            <div class="about-title">
+                <hr>
+                <h1>The Game</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="about-game">
+            <div class="about-item" style="background-color: #97b76f; border-radius: 10px;">
+                <img src="{{ url_for('static', filename='assets/paper.png') }}" alt="">
+                <h4>Paper</h4>
+                <hr>
+                <p>
+                    <strong>Smooth. Sneaky.</strong> <br>
+                    Deadlier than it looks and straight forward. <br>
+                    Covers rock with grace and elegance, but gets shredded by scissors. <br>
+                    <br>Basically the ninja of the trio — soft, but deadly.
+                </p>
+            </div>
+            <div class="about-item" style="background-color: #658e4c; border-radius: 10px;">
+                <img src="{{ url_for('static', filename='assets/rock.png') }}" alt="">
+                <h4>Rock</h4>
+                <hr>
+                <p>
+                    <strong>Solid. Unyielding.</strong> <br>
+                    The heavyweight champ of the hand world. <br>
+                    Crushes scissors, but gets smothered by paper. <br>
+                    <br>Often chosen by people who want to look tough but secretly fear paper cuts.
+                </p>
+            </div>
+            <div class="about-item" style="background-color: #4e793c; border-radius: 10px;">
+                <img src="{{ url_for('static', filename='assets/scissors.png') }}" alt="">
+                <h4>Scissors</h4>
+                <hr>
+                <p>
+                    <strong>Sharp. Precise.</strong> <br>
+                    Most stylish out of the three. <br>
+                    Slices through paper like nobody’s business, but gets crushed by rock<em>(ouch).</em> <br>
+                    <br>Often picked by people who live on the edge.
+                </p>
+            </div>
+        </div>
+        <div class="closing">
+            <div class="tech">
+                <h1>Built With</h1>
+                <div class="image-list">
+                    <img class="img-hover" src="{{ url_for('static', filename='assets/html-icon.png') }}" alt="HTML">
+                    <img class="img-hover" src="{{ url_for('static', filename='assets/css-icon.png') }}" alt="CSS">
+                    <img class="img-hover" src="{{ url_for('static', filename='assets/js-icon.png') }}" alt="JS">
+                </div>
+                <div class="image-list">
+                    <img class="img-hover" src="{{ url_for('static', filename='assets/python-icon.png') }}" alt="Python">
+                    <img class="img-hover" src="{{ url_for('static', filename='assets/tf-icon.png') }}" alt="Tensorflow">
+                    <img class="img-hover" src="{{ url_for('static', filename='assets/mediapipe-icon.png') }}" alt="Mediapipe Hands">
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="quote">
+                    <h5 style="text-align: left; color: white; margin-left: 30px; margin-bottom: 10px; font-size: 18px;">- Quote of the Day -</h5>
+                    <p>"I wasn’t procrastinating — I was just being productive... at everything except what I was supposed to do."</p>
+                </div>
+                <div class="contact-info">
+                    <div>
+                        <h5>Contact Me!</h5>
+                        <div class="my-info">
+                            <img src="{{ url_for('static', filename='assets/github-icon.png') }}" alt="Github">
+                            <p>https://github.com/KenzieJunaidi/</p>
+                        </div>
+                        <div class="my-info">
+                            <img src="{{ url_for('static', filename='assets/gmail-icon.png') }}" alt="Gmail">
+                            <p>kenzie.junaidi2@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="profile-pic">
+                        <img src="{{ url_for('static', filename='assets/profile.jpg') }}" alt="Minami">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

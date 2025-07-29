@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-navbar">
+            <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="Logo" class="header-logo">
+            <div class="options">
+                <a href="/" class="nav-link">Home</a>
+                <p>·</p>
+                <a href="/about" class="nav-link">About Us</a>
+                <p>·</p>
+                <a href="/play" class="nav-link">Play</a>
+            </div>
+        </div>
+        <div class="right-navbar">
+            <button style="background-color: #56940b; color: white;" class="option-button">Login</button>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-title">
+            <h1 style="color: #56940b">Think Fast.</h1>
+            <h1 style="color: #ff9900">The AI Does.</h1>
+        </div>
+        <p class="desc-1">The future of fun starts with a camera and your hand.</p>
+        <p class="desc-2">Ready? じゃんけん pon!</p>
+        <a href="/play">
+            <button style="background-color: #ff9900; color: white" class="play-button" id="start-button">Get Started!</button>
+        </a>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

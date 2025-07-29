@@ -1,0 +1,131 @@
+* {
+    font-family: "Inter";
+    padding: 5px 10px;
+    margin: 0;
+}
+
+body {
+    max-width: 1920px;
+    background: radial-gradient(circle at center, #f9f5f0 0%, #dceeea 100%);
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.left-navbar img {
+    width: 200px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.right-navbar {
+    display:flex;
+    gap: 2rem;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;
+}
+
+.options a {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.options p {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+}
+
+.option-button {
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-content {
+    margin-top: 100px;
+    
+    height: 500px;
+    width: 1000px;
+
+    text-align: center;
+    justify-self: center;
+    align-content: center;
+}
+
+.main-title {
+    font-size: 40px;
+    display: flex;
+}
+
+.desc-1 {
+    font-size: 20px;
+    align-self: center;
+    color: rgb(80, 80, 80);
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.desc-2 {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    text-decoration: underline;
+    text-decoration-color: #7dc426; 
+    text-decoration-thickness: 3px; 
+
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.play-button {
+    height: 70px;
+    width: 200px;
+
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effects */
+button:hover {
+  transform: scale(1.1);
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.nav-link.active {
+  color: black;
+  text-decoration: underline;
+}
