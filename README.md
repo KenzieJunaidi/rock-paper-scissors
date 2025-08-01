@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors AI – Real-Time Hand Gesture Detection Game
+# Jankenpon – Real-Time Rock-Paper-Scissors Detection Game
 
 This repository contains code and files for my project titled:  
 **"Rock-Paper-Scissors Powered by AI Hand Gesture Detection."**
