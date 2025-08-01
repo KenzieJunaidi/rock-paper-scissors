@@ -17,7 +17,7 @@ To build a simple yet fun AI-powered game that demonstrates real-time hand gestu
 - `templates/` – Flask HTML templates
 - `README.md` – Project documentation
 
-## 🔧 Technologies Used
+## 💼 Tech Stack
 
 - **Python**
 - **Flask** (for web interface)
